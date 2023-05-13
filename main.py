@@ -108,6 +108,8 @@ def user1(image_path, message, recipient_email):
     secret_image.save(secret_image_path)
     send_email(recipient_email, "Encryption Key", f"Your Encryption Key is: {key.decode()}\nTime of Encryption: {time.ctime()}\n", secret_image_path)
     print("Email sent to recipient with encryption key, decryption time and the secret image.")
+    corrupt_image(secret_image_path)
+    print("Secret Image Corrupted Successfully")
     
 def user2(image_path, user_provided_encryption_key):
     hidden_data = reveal_data_in_image(image_path).encode()
