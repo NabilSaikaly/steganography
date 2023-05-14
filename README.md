@@ -2,7 +2,7 @@
 
 This application is a steganography tool developed in Python. [Steganography](https://en.wikipedia.org/wiki/Steganography) is the practice of concealing a file, message, image, or video within another file, message, image, or video. This application enables two users (User 1 and User 2) to share hidden messages and information within an image file, using encryption for security.
 
-## How It Works / Usage / Pseudocode
+## How It Works / Usage 
 
 User 1 (Encoder):
 ```
